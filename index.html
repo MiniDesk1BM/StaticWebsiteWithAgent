@@ -10,6 +10,7 @@
   <header class="hero">
     <nav class="navbar">
       <div class="logo">AutoPrestige</div>
+      <button class="menu-toggle" aria-label="Ouvrir le menu">☰</button>
       <ul class="nav-links">
         <li><a href="#catalogue">Catalogue</a></li>
         <li><a href="#services">Services</a></li>
@@ -17,7 +18,7 @@
       </ul>
     </nav>
 
-    <div class="hero-content">
+    <div class="hero-content reveal">
       <h1>Trouvez la voiture idéale</h1>
       <p>Des véhicules fiables, élégants et adaptés à tous les budgets.</p>
       <a href="#catalogue" class="btn">Voir nos modèles</a>
@@ -25,7 +26,7 @@
   </header>
 
   <main>
-    <section id="catalogue" class="section">
+    <section id="catalogue" class="section reveal">
       <h2>Nos véhicules phares</h2>
       <div class="cards">
         <article class="card">
@@ -33,6 +34,7 @@
           <h3>Berline Premium</h3>
           <p>Confort, performance et élégance pour tous vos trajets.</p>
           <span class="price">À partir de 24 900 €</span>
+          <a href="voiture.html" class="btn card-btn">Voir le détail</a>
         </article>
 
         <article class="card">
@@ -40,6 +42,7 @@
           <h3>SUV Familial</h3>
           <p>Espace, sécurité et polyvalence pour toute la famille.</p>
           <span class="price">À partir de 31 500 €</span>
+          <a href="voiture.html" class="btn card-btn">Voir le détail</a>
         </article>
 
         <article class="card">
@@ -47,11 +50,12 @@
           <h3>Citadine Moderne</h3>
           <p>Compacte, économique et parfaite pour la ville.</p>
           <span class="price">À partir de 16 990 €</span>
+          <a href="voiture.html" class="btn card-btn">Voir le détail</a>
         </article>
       </div>
     </section>
 
-    <section id="services" class="section alt">
+    <section id="services" class="section alt reveal">
       <h2>Pourquoi nous choisir ?</h2>
       <div class="features">
         <div class="feature">
@@ -69,7 +73,7 @@
       </div>
     </section>
 
-    <section id="contact" class="section contact">
+    <section id="contact" class="section contact reveal">
       <h2>Contactez-nous</h2>
       <p>Besoin d'un conseil ou d'un devis ? Notre équipe est à votre écoute.</p>
       <a href="mailto:contact@autoprestige.fr" class="btn">Nous écrire</a>
@@ -79,5 +83,7 @@
   <footer class="footer">
     <p>&copy; 2026 AutoPrestige - Tous droits réservés.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
