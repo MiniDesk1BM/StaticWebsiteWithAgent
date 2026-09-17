@@ -40,7 +40,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 5%;
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: transparent;
+  transition: background 0.3s ease, padding 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  padding: 0.9rem 5%;
+  background: rgba(15, 23, 42, 0.82);
+  opacity: 0.94;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  backdrop-filter: blur(8px);
 }
 
 .logo {
