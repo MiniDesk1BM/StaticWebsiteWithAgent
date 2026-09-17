@@ -28,7 +28,14 @@
   <main>
     <section id="catalogue" class="section reveal">
       <h2>Nos véhicules phares</h2>
-      <div id="catalogue-cards" class="cards"></div>
+      <div class="carousel">
+        <button class="carousel-btn carousel-btn-prev" aria-label="Véhicule précédent">‹</button>
+        <div class="carousel-track-wrapper">
+          <div id="catalogue-cards" class="carousel-track"></div>
+        </div>
+        <button class="carousel-btn carousel-btn-next" aria-label="Véhicule suivant">›</button>
+      </div>
+      <div id="carousel-dots" class="carousel-dots" aria-label="Navigation du carousel"></div>
     </section>
 
     <section id="services" class="section alt reveal">
