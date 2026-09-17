@@ -122,11 +122,17 @@ const cars = [
 
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
+const navbar = document.querySelector('.navbar');
 
 if (menuToggle && navLinks) {
   menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('open');
   });
+}
+
+function updateNavbarOnScroll() {
+  if (!navbar) return;
+  navbar.classList.toggle('scrolled', window.scrollY > 10);
 }
 
 function revealOnScroll() {
@@ -228,8 +234,13 @@ function renderCatalogue() {
   revealOnScroll();
 }
 
-window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('scroll', () => {
+  updateNavbarOnScroll();
+  revealOnScroll();
+});
+
 window.addEventListener('load', () => {
+  updateNavbarOnScroll();
   renderCatalogue();
   revealOnScroll();
 });
